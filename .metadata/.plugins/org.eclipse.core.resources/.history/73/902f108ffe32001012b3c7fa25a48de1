@@ -1,0 +1,25 @@
+package com.kruthik.petistan.repositories.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Repository;
+
+import com.kruthik.petistan.dto.PetDTO;
+import com.kruthik.petistan.repositories.PetRepository;
+
+@Repository
+public class PetRepositoryImpl implements PetRepository {
+
+	private List<PetDTO> petList;
+	
+	public PetRepositoryImpl() {
+		this.petList = petList;
+	}
+	
+	@Override
+	public Optional<PetDTO> findPetById(int petId) {
+		return Optional.empty();
+	}
+
+}

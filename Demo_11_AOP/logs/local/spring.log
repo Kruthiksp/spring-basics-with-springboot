@@ -1,0 +1,62 @@
+2025-05-12T11:34:53.489+05:30  INFO 17768 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : Starting Demo9ProfilesApplication using Java 21.0.4 with PID 17768 (E:\Spring\Spring-workspace\Demo_11_AOP\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_11_AOP)
+2025-05-12T11:34:53.492+05:30  INFO 17768 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : The following 1 profile is active: "local"
+2025-05-12T11:34:53.531+05:30  INFO 17768 --- [Demo_11_AOP] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-12T11:34:54.115+05:30  INFO 17768 --- [Demo_11_AOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-12T11:34:54.138+05:30  INFO 17768 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : Started Demo9ProfilesApplication in 1.019 seconds (process running for 1.892)
+2025-05-12T11:34:54.140+05:30  INFO 17768 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : started logging...
+2025-05-12T11:34:58.462+05:30  INFO 17768 --- [Demo_11_AOP] [restartedMain] com.AOP.logs.AOP_Logs                    : Exiting String com.spring.service.impl.OwnerServiceImpl.findOwner()
+2025-05-12T11:42:03.176+05:30  INFO 16640 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : Starting Demo9ProfilesApplication using Java 21.0.4 with PID 16640 (E:\Spring\Spring-workspace\Demo_11_AOP\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_11_AOP)
+2025-05-12T11:42:03.177+05:30  INFO 16640 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : The following 1 profile is active: "local"
+2025-05-12T11:42:03.213+05:30  INFO 16640 --- [Demo_11_AOP] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-12T11:42:03.723+05:30  INFO 16640 --- [Demo_11_AOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-12T11:42:03.746+05:30  INFO 16640 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : Started Demo9ProfilesApplication in 0.891 seconds (process running for 1.432)
+2025-05-12T11:42:03.749+05:30  INFO 16640 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : started logging...
+2025-05-12T11:42:06.112+05:30  INFO 16640 --- [Demo_11_AOP] [restartedMain] com.AOP.logs.AOP_Logs                    : Exiting String com.spring.service.impl.OwnerServiceImpl.findOwner()
+2025-05-12T11:42:15.339+05:30  INFO 11200 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : Starting Demo9ProfilesApplication using Java 21.0.4 with PID 11200 (E:\Spring\Spring-workspace\Demo_11_AOP\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_11_AOP)
+2025-05-12T11:42:15.340+05:30  INFO 11200 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : The following 1 profile is active: "local"
+2025-05-12T11:42:15.375+05:30  INFO 11200 --- [Demo_11_AOP] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-12T11:42:15.787+05:30  INFO 11200 --- [Demo_11_AOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-12T11:42:15.807+05:30  INFO 11200 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : Started Demo9ProfilesApplication in 0.793 seconds (process running for 1.38)
+2025-05-12T11:42:15.809+05:30  INFO 11200 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : started logging...
+2025-05-12T11:42:17.873+05:30  INFO 11200 --- [Demo_11_AOP] [restartedMain] com.AOP.logs.AOP_Logs                    : Exiting String com.spring.service.impl.OwnerServiceImpl.findOwner()
+2025-05-12T11:42:17.874+05:30 ERROR 11200 --- [Demo_11_AOP] [restartedMain] com.demo.Demo9ProfilesApplication        : Failed to find the owner with Owner ID: 11
+
+com.exceptions.OwnerNotFoundException: Failed to find the owner with Owner ID: 11
+	at com.spring.repository.impl.OwnerRepositoryImpl.findOwner(OwnerRepositoryImpl.java:27) ~[classes/:na]
+	at com.spring.service.impl.OwnerServiceImpl.findOwner(OwnerServiceImpl.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.6.jar:6.2.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.6.jar:6.2.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.6.jar:6.2.6]
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49) ~[spring-aop-6.2.6.jar:6.2.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.6.jar:6.2.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.6.jar:6.2.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.6.jar:6.2.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.6.jar:6.2.6]
+	at com.spring.service.impl.OwnerServiceImpl$$SpringCGLIB$$0.findOwner(<generated>) ~[classes/:na]
+	at com.demo.Demo9ProfilesApplication.run(Demo9ProfilesApplication.java:35) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:789) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:788) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:773) ~[spring-boot-3.4.5.jar:3.4.5]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:773) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.demo.Demo9ProfilesApplication.main(Demo9ProfilesApplication.java:22) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+

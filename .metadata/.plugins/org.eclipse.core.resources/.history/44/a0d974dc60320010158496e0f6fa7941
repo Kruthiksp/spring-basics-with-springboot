@@ -1,0 +1,5 @@
+package com.kruthik.petistan.service;
+
+public interface PetService {
+
+}

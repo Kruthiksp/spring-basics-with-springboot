@@ -1,0 +1,5 @@
+package com.kruthik.petistan.dto;
+
+public class WildPetDTO extends PetDTO {
+	private String birthPlace;
+}

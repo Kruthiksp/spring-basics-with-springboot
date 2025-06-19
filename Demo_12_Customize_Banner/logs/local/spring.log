@@ -1,0 +1,86 @@
+2025-05-12T11:59:29.300+05:30  INFO 7696 --- [Demo_9_Profiles] [main] c.demo.Demo12CustomizeBannerApplication  : Starting Demo12CustomizeBannerApplication using Java 21.0.4 with PID 7696 (E:\Spring\Spring-workspace\Demo_12_Customize_Banner\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_12_Customize_Banner)
+2025-05-12T11:59:29.302+05:30  INFO 7696 --- [Demo_9_Profiles] [main] c.demo.Demo12CustomizeBannerApplication  : The following 1 profile is active: "local"
+2025-05-12T11:59:29.636+05:30  INFO 7696 --- [Demo_9_Profiles] [main] c.demo.Demo12CustomizeBannerApplication  : Started Demo12CustomizeBannerApplication in 0.653 seconds (process running for 1.176)
+2025-05-12T11:59:29.639+05:30  INFO 7696 --- [Demo_9_Profiles] [main] c.demo.Demo12CustomizeBannerApplication  : started logging...
+2025-05-12T11:59:37.892+05:30 ERROR 7696 --- [Demo_9_Profiles] [main] c.demo.Demo12CustomizeBannerApplication  : Failed to find the owner with Owner ID: 11
+
+com.exceptions.OwnerNotFoundException: Failed to find the owner with Owner ID: 11
+	at com.spring.repository.impl.OwnerRepositoryImpl.findOwner(OwnerRepositoryImpl.java:26) ~[classes/:na]
+	at com.spring.service.impl.OwnerServiceImpl.findOwner(OwnerServiceImpl.java:27) ~[classes/:na]
+	at com.demo.Demo12CustomizeBannerApplication.run(Demo12CustomizeBannerApplication.java:35) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:789) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:788) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:773) ~[spring-boot-3.4.5.jar:3.4.5]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:773) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.demo.Demo12CustomizeBannerApplication.main(Demo12CustomizeBannerApplication.java:22) ~[classes/:na]
+
+2025-05-12T12:01:41.528+05:30  INFO 13752 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Starting Demo12CustomizeBannerApplication using Java 21.0.4 with PID 13752 (E:\Spring\Spring-workspace\Demo_12_Customize_Banner\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_12_Customize_Banner)
+2025-05-12T12:01:41.529+05:30  INFO 13752 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : The following 1 profile is active: "local"
+2025-05-12T12:01:41.834+05:30  INFO 13752 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Started Demo12CustomizeBannerApplication in 0.634 seconds (process running for 1.121)
+2025-05-12T12:01:41.836+05:30  INFO 13752 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : started logging...
+2025-05-12T12:01:54.916+05:30  INFO 18388 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Starting Demo12CustomizeBannerApplication using Java 21.0.4 with PID 18388 (E:\Spring\Spring-workspace\Demo_12_Customize_Banner\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_12_Customize_Banner)
+2025-05-12T12:01:54.917+05:30  INFO 18388 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : The following 1 profile is active: "local"
+2025-05-12T12:01:55.229+05:30  INFO 18388 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Started Demo12CustomizeBannerApplication in 0.63 seconds (process running for 1.148)
+2025-05-12T12:01:55.232+05:30  INFO 18388 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : started logging...
+2025-05-12T12:01:57.141+05:30 ERROR 18388 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Failed to find the owner with Owner ID: 11
+
+com.exceptions.OwnerNotFoundException: Failed to find the owner with Owner ID: 11
+	at com.spring.repository.impl.OwnerRepositoryImpl.findOwner(OwnerRepositoryImpl.java:26) ~[classes/:na]
+	at com.spring.service.impl.OwnerServiceImpl.findOwner(OwnerServiceImpl.java:27) ~[classes/:na]
+	at com.demo.Demo12CustomizeBannerApplication.run(Demo12CustomizeBannerApplication.java:35) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:789) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:788) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:773) ~[spring-boot-3.4.5.jar:3.4.5]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:773) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.demo.Demo12CustomizeBannerApplication.main(Demo12CustomizeBannerApplication.java:22) ~[classes/:na]
+
+2025-05-12T12:04:25.826+05:30  INFO 4108 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Starting Demo12CustomizeBannerApplication using Java 21.0.4 with PID 4108 (E:\Spring\Spring-workspace\Demo_12_Customize_Banner\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_12_Customize_Banner)
+2025-05-12T12:04:25.827+05:30  INFO 4108 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : The following 1 profile is active: "local"
+2025-05-12T12:04:26.149+05:30  INFO 4108 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Started Demo12CustomizeBannerApplication in 0.682 seconds (process running for 1.184)
+2025-05-12T12:04:26.151+05:30  INFO 4108 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : started logging...
+2025-05-12T12:08:26.339+05:30  INFO 4108 --- [Demo_12_Customize_Banner] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-12T12:08:39.658+05:30  INFO 452 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Starting Demo12CustomizeBannerApplication using Java 21.0.4 with PID 452 (E:\Spring\Spring-workspace\Demo_12_Customize_Banner\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_12_Customize_Banner)
+2025-05-12T12:08:39.659+05:30  INFO 452 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : The following 1 profile is active: "local"
+2025-05-12T12:08:39.962+05:30  INFO 452 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Started Demo12CustomizeBannerApplication in 0.637 seconds (process running for 1.108)
+2025-05-12T12:08:39.964+05:30  INFO 452 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : started logging...
+2025-05-12T12:09:47.548+05:30  INFO 452 --- [Demo_12_Customize_Banner] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-12T12:09:57.485+05:30  INFO 17556 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Starting Demo12CustomizeBannerApplication using Java 21.0.4 with PID 17556 (E:\Spring\Spring-workspace\Demo_12_Customize_Banner\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_12_Customize_Banner)
+2025-05-12T12:09:57.487+05:30  INFO 17556 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : The following 1 profile is active: "local"
+2025-05-12T12:09:57.894+05:30  INFO 17556 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Started Demo12CustomizeBannerApplication in 0.864 seconds (process running for 1.554)
+2025-05-12T12:09:57.896+05:30  INFO 17556 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : started logging...
+2025-05-12T12:10:09.829+05:30  INFO 17556 --- [Demo_12_Customize_Banner] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-12T12:10:13.655+05:30  INFO 16776 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Starting Demo12CustomizeBannerApplication using Java 21.0.4 with PID 16776 (E:\Spring\Spring-workspace\Demo_12_Customize_Banner\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_12_Customize_Banner)
+2025-05-12T12:10:13.658+05:30  INFO 16776 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : The following 1 profile is active: "local"
+2025-05-12T12:10:14.199+05:30  INFO 16776 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : Started Demo12CustomizeBannerApplication in 0.941 seconds (process running for 1.484)
+2025-05-12T12:10:14.204+05:30  INFO 16776 --- [Demo_12_Customize_Banner] [main] c.demo.Demo12CustomizeBannerApplication  : started logging...
+2025-05-12T12:36:38.097+05:30  INFO 16776 --- [Demo_12_Customize_Banner] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.

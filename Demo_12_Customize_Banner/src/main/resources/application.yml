@@ -1,0 +1,32 @@
+#spring.application.name=Demo_12_Customize_Banner
+#spring.main.banner-mode=off
+spring:
+  application:
+    name: Demo_12_Customize_Banner
+  profiles:
+    active: local
+  main:
+   banner-mode: console
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - local
+logging:
+  file:
+    path: logs/local
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - production
+logging:
+  file:
+    path: logs/production
+    name: ${logging.file.path}/${spring.application.name}.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: "${spring.application.name}-%d{yyyy-MM-dd}-%i.gz\t"
+      max-file-size: 10MB

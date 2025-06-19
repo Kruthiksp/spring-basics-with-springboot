@@ -1,0 +1,36 @@
+package com.kruthik.petistan.repositories.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.kruthik.petistan.dto.PetDTO;
+import com.kruthik.petistan.repositories.PetRepository;
+
+import jakarta.annotation.PostConstruct;
+
+@Repository
+public class PetRepositoryImpl implements PetRepository {
+
+	private List<PetDTO> petList;
+
+	public PetRepositoryImpl() {
+		this.petList = new ArrayList<>();
+	}
+
+	@PostConstruct
+	public void init() {
+		PetDTO pet = new PetDTO();
+		/*
+		 * set Values
+		 */
+		petList.add(pet);
+	}
+
+	@Override
+	public PetDTO findPetById(int petId) {
+		return (PetDTO) petList.stream().filter(pet -> pet.getPetId() == petId);
+	}
+
+}

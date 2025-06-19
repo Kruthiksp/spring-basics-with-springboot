@@ -1,0 +1,47 @@
+package com.kruthik.petistan.repositories.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Repository;
+
+import com.kruthik.petistan.dto.OwnerDTO;
+import com.kruthik.petistan.dto.PetDTO;
+import com.kruthik.petistan.repositories.OwnerRepository;
+
+@Repository
+public class OwnerRepositoryImpl implements OwnerRepository {
+
+	private List<OwnerDTO> ownerList;
+	
+	public OwnerRepositoryImpl() {
+		this.ownerList = new ArrayList<>();
+	}
+
+	@Override
+	public void saveOwner(OwnerDTO owner) {
+		
+	}
+
+	@Override
+	public OwnerDTO findOwnerById(int ownerId) {
+		return (OwnerDTO) ownerList.stream().filter(owner -> owner.getOwnerId() == ownerId);
+	}
+
+	@Override
+	public void updateOwner(int ownerId, String petNewName) {
+		
+	}
+
+	@Override
+	public void deleteOwner(int ownerId) {
+		
+	}
+
+	@Override
+	public List<OwnerDTO> findAllOwners() {
+		return null;
+	}
+
+}

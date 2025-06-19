@@ -1,0 +1,75 @@
+package com.demo;
+
+import java.util.Optional;
+import java.util.Scanner;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.kruthik.petistan.dto.OwnerDTO;
+import com.kruthik.petistan.dto.PetDTO;
+import com.kruthik.petistan.repositories.OwnerRepository;
+import com.kruthik.petistan.service.OwnerService;
+import com.kruthik.petsitan.util.InputUtil;
+
+@SpringBootApplication
+public class PetistanApplication implements CommandLineRunner {
+
+	private final OwnerService ownerService;
+	private final OwnerRepository ownerRepositories;
+	private static final Logger LOGGER = LoggerFactory.getLogger(PetistanApplication.class);
+
+	public PetistanApplication(OwnerService ownerService, OwnerRepository ownerRepositories) {
+		this.ownerService = ownerService;
+		this.ownerRepositories = ownerRepositories;
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(PetistanApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		try (Scanner sc = new Scanner(System.in)) {
+
+			do {
+				System.out.println("***\tPETISTAN\t***");
+				int menuOption = InputUtil.menuOptions(sc);
+				switch (menuOption) {
+
+				case 1:
+					OwnerDTO newOwner = InputUtil.saveOwner(sc);
+					PetDTO newPet = InputUtil.savePet(sc);
+					newOwner.setPetDTO(newPet);
+					ownerService.saveOwner(newOwner);
+					System.out.println("Owner Registered Successfully...");
+					break;
+
+				case 2:
+					int ownerId = InputUtil.ownerIdToOperate(sc);
+					Optional<OwnerDTO> owner = ownerService.findOwnerById(ownerId);
+					System.out.println("Owner fetched Successfully...");
+					System.out.println(owner);
+					break;
+				case 3:
+					int ownerId = InputUtil.ownerIdToOperate(sc);
+					break;
+				case 4:
+					break;
+				case 5:
+					break;
+				case 6:
+					break;
+				}
+
+			} while (InputUtil.wantToContinue(sc));
+
+		} catch (Exception e) {
+
+		}
+	}
+
+}

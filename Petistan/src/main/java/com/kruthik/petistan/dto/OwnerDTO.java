@@ -1,0 +1,18 @@
+package com.kruthik.petistan.dto;
+
+import com.kruthik.petistan.enums.Gender;
+
+import lombok.Data;
+
+@Data
+public class OwnerDTO {
+	private int ownerId;
+	private String firstName;
+	private String lastName;
+	private Gender gender;
+	private String city;
+	private String state;
+	private long mobile;
+	private String email;
+	private PetDTO petDTO;	
+}

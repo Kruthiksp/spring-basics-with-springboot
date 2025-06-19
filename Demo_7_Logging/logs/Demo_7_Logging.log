@@ -1,0 +1,31 @@
+2025-05-07T16:57:52.303+05:30  INFO 17976 --- [Demo_7_Logging] [main] com.demo.Demo7LoggingApplication         : Starting Demo7LoggingApplication using Java 21.0.4 with PID 17976 (E:\Spring\Spring-workspace\Demo_7_Logging\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_7_Logging)
+2025-05-07T16:57:52.305+05:30  INFO 17976 --- [Demo_7_Logging] [main] com.demo.Demo7LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T16:57:52.653+05:30  INFO 17976 --- [Demo_7_Logging] [main] com.demo.Demo7LoggingApplication         : Started Demo7LoggingApplication in 0.635 seconds (process running for 1.126)
+2025-05-07T16:57:52.656+05:30  INFO 17976 --- [Demo_7_Logging] [main] com.demo.Demo7LoggingApplication         : started logging...
+2025-05-07T16:57:55.701+05:30 ERROR 17976 --- [Demo_7_Logging] [main] com.demo.Demo7LoggingApplication         : Owner Not Found with the Id: 13
+
+com.exceptions.OwnerNotFoundException: Owner Not Found with the Id: 13
+	at com.spring.repository.impl.OwnerRepositoryImpl.findOwner(OwnerRepositoryImpl.java:22) ~[classes/:na]
+	at com.spring.service.impl.OwnerServiceImpl.findOwner(OwnerServiceImpl.java:27) ~[classes/:na]
+	at com.demo.Demo7LoggingApplication.run(Demo7LoggingApplication.java:35) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:789) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:788) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:773) ~[spring-boot-3.4.5.jar:3.4.5]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:773) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.demo.Demo7LoggingApplication.main(Demo7LoggingApplication.java:22) ~[classes/:na]
+

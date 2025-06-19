@@ -1,0 +1,12 @@
+2025-05-09T20:51:03.820+05:30  INFO 7788 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : Starting Demo9ProfilesApplication using Java 21.0.4 with PID 7788 (E:\Spring\Spring-workspace\Demo_10_YAML\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_10_YAML)
+2025-05-09T20:51:03.821+05:30  INFO 7788 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : The following 1 profile is active: "production"
+2025-05-09T20:51:04.203+05:30  INFO 7788 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : Started Demo9ProfilesApplication in 0.751 seconds (process running for 1.409)
+2025-05-09T20:51:04.205+05:30  INFO 7788 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : started logging...
+2025-05-09T20:51:18.341+05:30  INFO 9128 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : Starting Demo9ProfilesApplication using Java 21.0.4 with PID 9128 (E:\Spring\Spring-workspace\Demo_10_YAML\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_10_YAML)
+2025-05-09T20:51:18.342+05:30  INFO 9128 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : The following 1 profile is active: "production"
+2025-05-09T20:51:18.723+05:30  INFO 9128 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : Started Demo9ProfilesApplication in 0.734 seconds (process running for 1.23)
+2025-05-09T20:51:18.726+05:30  INFO 9128 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : started logging...
+2025-05-09T21:19:12.242+05:30  INFO 6980 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : Starting Demo9ProfilesApplication using Java 21.0.4 with PID 6980 (E:\Spring\Spring-workspace\Demo_10_YAML\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_10_YAML)
+2025-05-09T21:19:12.244+05:30  INFO 6980 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : The following 1 profile is active: "production"
+2025-05-09T21:19:12.622+05:30  INFO 6980 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : Started Demo9ProfilesApplication in 0.797 seconds (process running for 1.318)
+2025-05-09T21:19:12.625+05:30  INFO 6980 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : started logging...

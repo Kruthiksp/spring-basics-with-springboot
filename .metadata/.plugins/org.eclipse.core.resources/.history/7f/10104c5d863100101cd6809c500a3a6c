@@ -1,0 +1,5 @@
+package com.kruthik.petistan.dto;
+
+public class PetDTO {
+
+}

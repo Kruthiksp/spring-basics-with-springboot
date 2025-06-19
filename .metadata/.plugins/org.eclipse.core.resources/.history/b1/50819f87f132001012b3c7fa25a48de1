@@ -1,0 +1,20 @@
+package com.kruthik.petistan.service.impl;
+
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.kruthik.petistan.dto.PetDTO;
+import com.kruthik.petistan.exceptions.PetNotFoundException;
+import com.kruthik.petistan.service.PetService;
+
+@Service
+public class PetServiceImpl implements PetService {
+
+	@Override
+	public Optional<PetDTO> findPetById(int petId) throws PetNotFoundException {
+		
+		return ;
+	}
+
+}

@@ -1,0 +1,61 @@
+package com.kruthik.petistan.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import com.kruthik.petistan.dto.OwnerDTO;
+import com.kruthik.petistan.exceptions.DuplicateOwnerIdException;
+import com.kruthik.petistan.exceptions.OwnerNotFoundException;
+import com.kruthik.petistan.exceptions.PetNotFoundException;
+import com.kruthik.petistan.repositories.OwnerRepository;
+import com.kruthik.petistan.repositories.PetRepository;
+import com.kruthik.petistan.service.OwnerService;
+
+@Service
+public class OwnerServiceImpl implements OwnerService {
+	private final OwnerRepository ownerRepository;
+	private final String duplicateId;
+	private final String message;
+
+	public OwnerServiceImpl(OwnerRepository ownerRepository, @Value("${owner.not.found}") String message,@Value("${duplicate.owner.id}") String duplicateId) {
+		this.ownerRepository = ownerRepository;
+		this.duplicateId = duplicateId;
+		this.message = message;
+	}
+
+	@Override
+	public void saveOwner(OwnerDTO owner) throws DuplicateOwnerIdException {
+		if(ownerRepository.findOwnerById(owner.getOwnerId()).isPresent()) {
+			throw new DuplicateOwnerIdException(String.format(duplicateId, owner.getOwnerId()));
+		} else {
+			ownerRepository.saveOwner(owner);
+		}
+	}
+
+	@Override
+	public OwnerDTO findOwnerById(int ownerId) throws OwnerNotFoundException {
+		Optional<OwnerDTO> ownerById = ownerRepository.findOwnerById(ownerId);
+		return ownerRepository.findOwnerById(ownerId).orElseThrow(() -> new PetNotFoundException(String.format(message, ownerId)));
+	}
+
+	@Override
+	public void updateOwner(int ownerId, String petNewName) throws OwnerNotFoundException {
+		ownerRepository.findOwnerById(ownerId).orElseThrow(() -> new PetNotFoundException(String.format(message, ownerId)));
+		ownerRepository.updateOwner(ownerId, petNewName);
+	}
+
+	@Override
+	public void deleteOwner(int ownerId) throws OwnerNotFoundException {
+		ownerRepository.findOwnerById(ownerId).orElseThrow(() -> new PetNotFoundException(String.format(message, ownerId)));
+		ownerRepository.deleteOwner(ownerId);
+	}
+
+	@Override
+	public List<OwnerDTO> findAllOwners() {
+		return ownerRepository.findAllOwners();
+	}
+
+}

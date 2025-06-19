@@ -1,0 +1,14 @@
+package com.kruthik.petistan.service;
+
+import java.util.List;
+
+import com.kruthik.petistan.dto.OwnerDTO;
+
+public interface OwnerService {
+	public void saveOwner();
+	public OwnerDTO findOwner();
+	public void updateOwner();
+	public void deleteOwner();
+	public List<OwnerDTO> findAllOwners();
+	
+}

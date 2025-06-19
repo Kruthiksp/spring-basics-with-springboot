@@ -1,0 +1,19 @@
+package com.kruthik.petistan.service;
+
+import java.util.List;
+
+import com.kruthik.petistan.dto.OwnerDTO;
+import com.kruthik.petistan.exceptions.DuplicateOwnerIdException;
+import com.kruthik.petistan.exceptions.OwnerNotFoundException;
+
+public interface OwnerService {
+	public void saveOwner(OwnerDTO owner) throws DuplicateOwnerIdException;
+
+	public OwnerDTO findOwner(int ownerId) throws OwnerNotFoundException;
+
+	public void updateOwner(int ownerId, String petNewName) throws OwnerNotFoundException;
+
+	public void deleteOwner(int ownerId) throws OwnerNotFoundException;
+
+	public List<OwnerDTO> findAllOwners();
+}

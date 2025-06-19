@@ -1,0 +1,5 @@
+package com.kruthik.petistan.exceptions;
+
+public class DuplicateOwnerIdException extends Exception {
+
+}

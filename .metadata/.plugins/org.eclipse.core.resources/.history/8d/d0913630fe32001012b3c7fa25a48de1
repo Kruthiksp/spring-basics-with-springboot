@@ -1,0 +1,16 @@
+package com.kruthik.petistan.repositories.impl;
+
+import java.util.Optional;
+
+import com.kruthik.petistan.dto.PetDTO;
+import com.kruthik.petistan.repositories.PetRepository;
+
+public class PetRepositoryImpl implements PetRepository {
+
+	@Override
+	public Optional<PetDTO> findPetById(int petId) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+}

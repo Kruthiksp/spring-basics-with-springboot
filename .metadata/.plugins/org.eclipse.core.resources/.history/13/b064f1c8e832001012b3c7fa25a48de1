@@ -1,0 +1,9 @@
+package com.kruthik.petistan.repositories;
+
+import java.util.Optional;
+
+import com.kruthik.petistan.dto.PetDTO;
+
+public interface PetRepositories {
+	Optional<PetDTO> findPetById(int petId);
+}

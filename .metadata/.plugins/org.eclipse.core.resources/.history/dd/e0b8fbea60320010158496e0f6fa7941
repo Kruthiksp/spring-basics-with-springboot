@@ -1,0 +1,7 @@
+package com.kruthik.petistan.service;
+
+import com.kruthik.petistan.dto.PetDTO;
+
+public interface PetService {
+	public PetDTO findPet(int petId) throws PetNotFoundException;
+}

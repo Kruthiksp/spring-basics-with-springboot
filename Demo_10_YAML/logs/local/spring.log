@@ -1,0 +1,4 @@
+2025-05-12T11:54:31.918+05:30  INFO 1788 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : Starting Demo9ProfilesApplication using Java 21.0.4 with PID 1788 (E:\Spring\Spring-workspace\Demo_10_YAML\target\classes started by Kruthik S P in E:\Spring\Spring-workspace\Demo_10_YAML)
+2025-05-12T11:54:31.921+05:30  INFO 1788 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : The following 1 profile is active: "local"
+2025-05-12T11:54:32.282+05:30  INFO 1788 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : Started Demo9ProfilesApplication in 0.694 seconds (process running for 1.251)
+2025-05-12T11:54:32.286+05:30  INFO 1788 --- [Demo_9_Profiles] [main] com.demo.Demo9ProfilesApplication        : started logging...

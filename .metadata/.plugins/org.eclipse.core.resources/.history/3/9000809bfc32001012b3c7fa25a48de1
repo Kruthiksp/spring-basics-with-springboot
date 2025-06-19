@@ -1,0 +1,18 @@
+package com.kruthik.petistan.repositories;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.kruthik.petistan.dto.OwnerDTO;
+
+public interface OwnerRepository {
+	void saveOwner(OwnerDTO owner);
+
+	OwnerDTO findOwnerById(int ownerId);
+
+	void updateOwner(int ownerId, String petNewName);
+
+	void deleteOwner(int ownerId);
+
+	List<OwnerDTO> findAllOwners();
+}

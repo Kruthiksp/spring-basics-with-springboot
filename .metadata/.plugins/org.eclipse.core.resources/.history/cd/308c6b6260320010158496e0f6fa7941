@@ -1,0 +1,13 @@
+package com.kruthik.petistan.service;
+
+import java.util.List;
+
+import com.kruthik.petistan.dto.OwnerDTO;
+
+public interface OwnerService {
+	public void saveOwner(OwnerDTO owner) throws DuplicateOwnerIdException;
+	public OwnerDTO findOwner(int ownerId)throws DuplicateOwnerIdException;
+	public void updateOwner();
+	public void deleteOwner();
+	public List<OwnerDTO> findAllOwners();
+}

@@ -1,0 +1,140 @@
+package com.kruthik.petsitan.util;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
+import java.util.Scanner;
+
+import com.kruthik.petistan.dto.DomesticPetDTO;
+import com.kruthik.petistan.dto.OwnerDTO;
+import com.kruthik.petistan.dto.PetDTO;
+import com.kruthik.petistan.dto.WildPetDTO;
+import com.kruthik.petistan.enums.Gender;
+import com.kruthik.petistan.enums.PetType;
+
+public class InputUtil {
+	public static int menuOptions(Scanner sc) {
+		System.out.println("1. Press 1 to Add new Owner");
+		System.out.println("2. Press 2 to Fetch Owner Details");
+		System.out.println("3. Press 3 to Update Pet Details");
+		System.out.println("4. Press 4 to Fetch All Owners");
+		System.out.println("5. Press 5 to Fetch Pet Details");
+		System.out.println("6. Press 6 to Delete Owner");
+
+		int choice = sc.nextInt();
+
+		if (choice >= 1 && choice <= 6) {
+			return choice;
+		} else {
+			System.out.println("Invalid Option...");
+			return menuOptions(sc);
+		}
+	}
+
+	public static boolean wantToContinue(Scanner sc) {
+		System.out.println("Press Y to continue");
+		char choice = sc.next().toUpperCase().charAt(0);
+		if (choice == 'Y') {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public static OwnerDTO saveOwner(Scanner sc) {
+		System.out.println("Enter ownerId");
+		int ownerId = sc.nextInt();
+		System.out.println("Enter First Name");
+		String fname = sc.next();
+		System.out.println("Enter Last Name");
+		String lname = sc.next();
+		System.out.println("Enter your Gender");
+		System.out.println(Arrays.asList(Gender.values()));
+		String gender = sc.next();
+		System.out.println("Enter Your City");
+		String city = sc.next();
+		System.out.println("Enter Your State");
+		String state = sc.next();
+		System.out.println("Enter Your Mobile Number");
+		long mobile = sc.nextLong();
+		System.out.println("Enter Your MailId");
+		String mail = sc.next();
+
+		try {
+			OwnerDTO owner = new OwnerDTO();
+			owner.setOwnerId(ownerId);
+			owner.setFirstName(fname);
+			owner.setLastName(lname);
+			owner.setGender(Gender.valueOf(gender));
+			owner.setCity(city);
+			owner.setState(state);
+			owner.setMobile(mobile);
+			owner.setEmail(mail);
+
+			return owner;
+		} catch (Exception e) {
+			System.out.println(e.toString());
+			return saveOwner(sc);
+		}
+	}
+
+	public static PetDTO savePet(Scanner sc) {
+		System.out.println("Enter \"D\" for Domestic Pet And \"W\" Wild Pet");
+		char petCategory = sc.next().toUpperCase().charAt(0);
+
+		if (petCategory == 'D' || petCategory == 'W') {
+			System.out.println("Enter Pet Id");
+			int petId = sc.nextInt();
+			System.out.println("Enter Pet Name");
+			String name = sc.next();
+			System.out.println("Enter Pet Gender");
+			System.out.println(Arrays.asList(Gender.values()));
+			String gender = sc.next();
+			System.out.println("Enter Pet Type");
+			System.out.println(Arrays.asList(PetType.values()));
+			String petType = sc.next().toUpperCase();
+
+			if (petCategory == 'D') {
+				System.out.println("Enter pet Date Of Birth in \"DD-MM-YYYY\" Format");
+				String dob = sc.next();
+
+				DomesticPetDTO pet = new DomesticPetDTO();
+
+				pet.setPetId(petId);
+				pet.setPetName(name);
+				pet.setGender(Gender.valueOf(gender));
+				pet.setPetType(PetType.valueOf(petType));
+				pet.setDob(stringToLocalDate(dob));
+
+				return pet;
+
+			} else {
+				System.out.println("Enter pet Birth Place");
+				String birthPlace = sc.next();
+
+				WildPetDTO pet = new WildPetDTO();
+				pet.setPetId(petId);
+				pet.setPetName(name);
+				pet.setGender(Gender.valueOf(gender));
+				pet.setPetType(PetType.valueOf(petType));
+				pet.setBirthPlace(birthPlace);
+
+				return pet;
+			}
+		} else {
+			System.out.println("Pet Category was incorrect \nPlease type W or D only");
+			return savePet(sc);
+		}
+	}
+	
+	public static String updatePetName(Scanner sc) {
+		System.out.println("Enter New Name of the Pet");
+		String petName = sc.next();
+	}
+
+	public static LocalDate stringToLocalDate(String date) {
+		DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		LocalDate localDate = LocalDate.parse(date, format);
+		return localDate;
+	}
+}

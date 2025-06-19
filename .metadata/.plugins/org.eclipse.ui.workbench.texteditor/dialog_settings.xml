@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="false"/>
+	<list key="searchhistory">
+		<item value="stringToLocalDate"/>
+		<item value="PetRepository"/>
+		<item value="3.4.5"/>
+		<item value="jar"/>
+		<item value="&lt;packaging&gt;jar&lt;/packaging&gt;"/>
+	</list>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="stringToLocalDate"/>
+		<list key="findhistory">
+			<item value="stringToLocalDate"/>
+		</list>
+	</section>
+</section>

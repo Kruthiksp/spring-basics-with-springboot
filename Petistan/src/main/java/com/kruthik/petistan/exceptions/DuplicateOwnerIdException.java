@@ -1,0 +1,10 @@
+package com.kruthik.petistan.exceptions;
+
+public class DuplicateOwnerIdException extends RuntimeException  {
+	
+	private static final long serialVersionUID = 1L;
+
+	public DuplicateOwnerIdException(String message) {
+		super(message);
+	}
+}

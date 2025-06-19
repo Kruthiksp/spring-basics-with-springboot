@@ -1,0 +1,17 @@
+package com.kruthik.petistan.service.impl;
+
+import java.util.Optional;
+
+import com.kruthik.petistan.dto.PetDTO;
+import com.kruthik.petistan.exceptions.PetNotFoundException;
+import com.kruthik.petistan.service.PetService;
+
+public class PetServiceImpl implements PetService {
+
+	@Override
+	public Optional<PetDTO> findPetById(int petId) throws PetNotFoundException {
+		
+		return ;
+	}
+
+}
